@@ -1,4 +1,4 @@
-package com.vehicle_alert.demo;
+package com.vehicle_alert;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
