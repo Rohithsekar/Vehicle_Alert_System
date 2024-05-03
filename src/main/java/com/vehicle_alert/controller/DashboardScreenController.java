@@ -1,10 +1,7 @@
 package com.vehicle_alert.controller;
 
 
-import com.vehicle_alert.dto.APIResponse;
-import com.vehicle_alert.dto.Graticule;
-import com.vehicle_alert.dto.JourneyLatLngDTO;
-import com.vehicle_alert.dto.JourneyPath;
+import com.vehicle_alert.dto.*;
 import com.vehicle_alert.interfaces.DashboardService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +17,12 @@ public class DashboardScreenController {
         this.dashboardService = dashboardService;
     }
 
+
+
+
+    public ResponseEntity<APIResponse> login(@RequestBody LoginDTO loginDTO){
+        return dashboardService.login(loginDTO);
+    }
     /**
      *
      * @return APIResponse object containing the locations list

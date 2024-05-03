@@ -1,12 +1,11 @@
 package com.vehicle_alert.interfaces;
 
-import com.vehicle_alert.dto.APIResponse;
-import com.vehicle_alert.dto.Graticule;
-import com.vehicle_alert.dto.JourneyLatLngDTO;
-import com.vehicle_alert.dto.JourneyPath;
+import com.vehicle_alert.dto.*;
 import org.springframework.http.ResponseEntity;
 
 public interface DashboardService {
+
+    ResponseEntity<APIResponse> login(LoginDTO loginDTO);
 
     ResponseEntity<APIResponse> fetchDropdownItems();
 
