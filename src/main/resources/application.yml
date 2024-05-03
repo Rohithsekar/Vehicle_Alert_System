@@ -9,7 +9,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-gcp:
-  firebase:
-    service-account: "classpath:firebase-service-account.json"
-    name: "mobility"
+#gcp:
+#  firebase:
+#    service-account: "classpath:firebase-service-account.json"
+#    name: "mobility"
