@@ -9,6 +9,8 @@ import lombok.Setter;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
+
+//Graticule is a container term encompassing both latitude and longitude
 @Embeddable
 @Getter
 @Setter
