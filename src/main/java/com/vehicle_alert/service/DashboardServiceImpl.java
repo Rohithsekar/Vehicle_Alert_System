@@ -1,7 +1,7 @@
 package com.vehicle_alert.service;
 
 import com.uber.h3core.H3Core;
-import com.vehicle_alert.Constants.Constants;
+import com.vehicle_alert.constants.Constants;
 import com.vehicle_alert.dto.APIResponse;
 import com.vehicle_alert.dto.JourneyLatLngDTO;
 import com.vehicle_alert.entity.Location;

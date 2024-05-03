@@ -1,4 +1,4 @@
-package com.vehicle_alert.Constants;
+package com.vehicle_alert.constants;
 
 public class Constants {
 
