@@ -2,6 +2,8 @@ package com.vehicle_alert.controller;
 
 
 import com.vehicle_alert.dto.APIResponse;
+import com.vehicle_alert.dto.Graticule;
+import com.vehicle_alert.dto.JourneyLatLngDTO;
 import com.vehicle_alert.dto.JourneyPath;
 import com.vehicle_alert.interfaces.DashboardService;
 import org.springframework.http.ResponseEntity;
@@ -38,5 +40,11 @@ public class DashboardScreenController {
             @RequestParam String destination
     ){
         return dashboardService.postTripPath(source,destination);
+    }
+
+    @PostMapping("/alert")
+    public ResponseEntity<APIResponse> journeyStartsMovement(@RequestBody JourneyLatLngDTO journeyLatLngDTO){
+
+        return dashboardService.journeyStartsMovement(journeyLatLngDTO);
     }
 }
