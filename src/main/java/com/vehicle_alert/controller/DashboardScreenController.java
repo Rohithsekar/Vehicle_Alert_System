@@ -2,11 +2,10 @@ package com.vehicle_alert.controller;
 
 
 import com.vehicle_alert.dto.APIResponse;
+import com.vehicle_alert.dto.JourneyPath;
 import com.vehicle_alert.interfaces.DashboardService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
@@ -18,8 +17,15 @@ public class DashboardScreenController {
         this.dashboardService = dashboardService;
     }
 
-    @GetMapping
+    @GetMapping("/dropdown")
     public ResponseEntity<APIResponse> dropdownMenu(){
         return dashboardService.fetchDropdownItems();
+    }
+
+
+    @PostMapping("/trip")
+    public ResponseEntity<APIResponse> postTripPathDetails(@RequestBody JourneyPath journeyPath){
+
+        return dashboardService.postTripPath(journeyPath);
     }
 }

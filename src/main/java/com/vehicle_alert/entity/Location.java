@@ -1,6 +1,7 @@
 package com.vehicle_alert.entity;
 
 
+import com.vehicle_alert.dto.Graticule;
 import lombok.*;
 
 import javax.persistence.*;
@@ -22,15 +23,12 @@ public class Location {
     @Column(name = "address")
     private String address;
 
-    @Column(name = "latitude")
-    private Double latitude;
+    @Embedded()
+    private Graticule graticule;
 
-    @Column(name = "longitude")
-    private Double longitude;
-
-    public Location(String address, Double latitude, Double longitude) {
+    public Location(String address, Graticule graticule) {
         this.address = address;
-        this.latitude = latitude;
-        this.longitude = longitude;
+        this.graticule = graticule;
+
     }
 }
