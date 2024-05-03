@@ -35,51 +35,10 @@ public class DashboardServiceImpl implements DashboardService {
     }
 
     @Override
-    public ResponseEntity<APIResponse> postTripPath(JourneyPath journeyPath) {
-
-        try {
-
-            //convert journey coordinates into h3 indices and save it to database
-
-            String source = journeyPath.getSource();
-            String destination = journeyPath.getDestination();
-            Double sourceLat = journeyPath.getSourceLat();
-            Double sourcelLng = journeyPath.getSourceLng();
-            Double destinationLat = journeyPath.getDestinationLat();
-            Double destinationLng = journeyPath.getDestinationLng();
-
-            List<Graticule> graticuleList = journeyPath.getGraticuleList();
-
-            Integer res = 11;
-            H3Core h3Core = H3Core.newInstance();
-
-            List<Long> h3Indices = new ArrayList<>();
-
-            graticuleList.forEach(graticule -> {
-
-                Long h3Index = h3Core.latLngToCell(graticule.getLatitude(), graticule.getLongitude(), res);
-
-                graticule.setH3Index(h3Index);
-                graticule.setH3resolution(res);
-
-
-            });
-
-            JourneyCoordinates journeyCoordinates = new JourneyCoordinates();
-
-            journeyCoordinates.setSource(source);
-            journeyCoordinates.setDestination(destination);
-            journeyCoordinates.setSourceLat(sourceLat);
-            journeyCoordinates.setSourceLng(sourcelLng);
-            journeyCoordinates.setDestinationLat(destinationLat);
-            journeyCoordinates.setDestinationLng(destinationLng);
-            journeyCoordinates.setGraticuleList(graticuleList);
+    public ResponseEntity<APIResponse> postTripPath(String source, String destination) {
 
 
 
-        } catch (IOException e) {
-            System.err.println("IOException happened in post trip path method:" + e.getMessage());
-        }
 
         return null;
 

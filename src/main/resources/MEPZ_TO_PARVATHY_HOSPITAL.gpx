@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><gpx xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" creator="GraphHopper" version="1.1" xmlns:gh="https://graphhopper.com/public/schema/gpx/1.1">
+<metadata><copyright author="OpenStreetMap contributors"/><link href="http://graphhopper.com"><text>GraphHopper GPX</text></link><time>2024-05-03T04:44:37.297Z</time></metadata>
+<rte>
+<rtept lat="12.941033" lon="80.120630"><desc>Continue</desc><extensions><gh:distance>360.3</gh:distance><gh:time>259417</gh:time><gh:sign>0</gh:sign></extensions></rtept>
+<rtept lat="12.937825" lon="80.120630"><desc>Turn left</desc><extensions><gh:distance>293.693</gh:distance><gh:time>211459</gh:time><gh:sign>-2</gh:sign></extensions></rtept>
+<rtept lat="12.937237" lon="80.123268"><desc>Turn right</desc><extensions><gh:distance>46.88</gh:distance><gh:time>33754</gh:time><gh:sign>2</gh:sign></extensions></rtept>
+<rtept lat="12.936829" lon="80.123158"><desc>Turn left</desc><extensions><gh:distance>394.676</gh:distance><gh:time>284167</gh:time><gh:sign>-2</gh:sign></extensions></rtept>
+<rtept lat="12.935609" lon="80.126566"><desc>Turn left onto Grand Southern Trunk Road</desc><extensions><gh:distance>59.183</gh:distance><gh:time>42612</gh:time><gh:sign>-2</gh:sign></extensions></rtept>
+<rtept lat="12.935992" lon="80.126945"><desc>Turn right</desc><extensions><gh:distance>10.97</gh:distance><gh:time>7522</gh:time><gh:sign>2</gh:sign></extensions></rtept>
+<rtept lat="12.935931" lon="80.127025"><desc>Turn left onto Grand Southern Trunk Road</desc><extensions><gh:distance>9.418</gh:distance><gh:time>6781</gh:time><gh:sign>-2</gh:sign></extensions></rtept>
+<rtept lat="12.935992" lon="80.127086"><desc>Turn right</desc><extensions><gh:distance>17.116</gh:distance><gh:time>11737</gh:time><gh:sign>2</gh:sign></extensions></rtept>
+<rtept lat="12.935898" lon="80.127210"><desc>Turn left</desc><extensions><gh:distance>219.345</gh:distance><gh:time>157928</gh:time><gh:sign>-2</gh:sign></extensions></rtept>
+<rtept lat="12.937431" lon="80.128485"><desc>Turn right onto Chitlapakkam Road</desc><extensions><gh:distance>9.338</gh:distance><gh:time>6723</gh:time><gh:sign>2</gh:sign></extensions></rtept>
+<rtept lat="12.937380" lon="80.128554"><desc>Keep left</desc><extensions><gh:distance>87.28</gh:distance><gh:time>62841</gh:time><gh:sign>-7</gh:sign></extensions></rtept>
+<rtept lat="12.937088" lon="80.129299"><desc>Turn left</desc><extensions><gh:distance>359.314</gh:distance><gh:time>258706</gh:time><gh:sign>-2</gh:sign></extensions></rtept>
+<rtept lat="12.939740" lon="80.131181"><desc>Turn left onto jayanagar 1st main</desc><extensions><gh:distance>63.542</gh:distance><gh:time>45750</gh:time><gh:sign>-2</gh:sign></extensions></rtept>
+<rtept lat="12.940114" lon="80.130738"><desc>Turn right onto Grand Southern Trunk Road</desc><extensions><gh:distance>657.242</gh:distance><gh:time>473215</gh:time><gh:sign>2</gh:sign></extensions></rtept>
+<rtept lat="12.944372" lon="80.134937"><desc>Keep right</desc><extensions><gh:distance>41.528</gh:distance><gh:time>29900</gh:time><gh:sign>7</gh:sign></extensions></rtept>
+<rtept lat="12.944625" lon="80.135219"><desc>Keep right</desc><extensions><gh:distance>230.391</gh:distance><gh:time>165882</gh:time><gh:sign>7</gh:sign></extensions></rtept>
+<rtept lat="12.946213" lon="80.136559"><desc>Arrive at destination</desc><extensions><gh:distance>0</gh:distance><gh:time>0</gh:time><gh:sign>4</gh:sign></extensions></rtept>
+</rte>
+<trk>
+<name>GraphHopper Track</name><desc></desc>
+<trkseg><trkpt lat="12.941033" lon="80.120630"><ele>27.2</ele></trkpt>
+<trkpt lat="12.940510" lon="80.120603"><ele>28.4</ele></trkpt>
+<trkpt lat="12.940171" lon="80.120630"><ele>28.5</ele></trkpt>
+<trkpt lat="12.939676" lon="80.120783"><ele>28.7</ele></trkpt>
+<trkpt lat="12.939101" lon="80.120740"><ele>28.8</ele></trkpt>
+<trkpt lat="12.938573" lon="80.120729"><ele>29.2</ele></trkpt>
+<trkpt lat="12.938264" lon="80.120673"><ele>29.6</ele></trkpt>
+<trkpt lat="12.937825" lon="80.120630"><ele>29.7</ele></trkpt>
+<trkpt lat="12.937637" lon="80.121548"><ele>31.1</ele></trkpt>
+<trkpt lat="12.937547" lon="80.121921"><ele>31.5</ele></trkpt>
+<trkpt lat="12.937352" lon="80.122931"><ele>33.3</ele></trkpt>
+<trkpt lat="12.937279" lon="80.123107"><ele>33.6</ele></trkpt>
+<trkpt lat="12.937237" lon="80.123268"><ele>33.9</ele></trkpt>
+<trkpt lat="12.936829" lon="80.123158"><ele>33.4</ele></trkpt>
+<trkpt lat="12.936752" lon="80.123653"><ele>33.6</ele></trkpt>
+<trkpt lat="12.936486" lon="80.124343"><ele>33.7</ele></trkpt>
+<trkpt lat="12.935609" lon="80.126566"><ele>36.2</ele></trkpt>
+<trkpt lat="12.935992" lon="80.126945"><ele>36.3</ele></trkpt>
+<trkpt lat="12.935931" lon="80.127025"><ele>35.9</ele></trkpt>
+<trkpt lat="12.935992" lon="80.127086"><ele>35.9</ele></trkpt>
+<trkpt lat="12.935956" lon="80.127126"><ele>35.6</ele></trkpt>
+<trkpt lat="12.935898" lon="80.127210"><ele>35.1</ele></trkpt>
+<trkpt lat="12.937431" lon="80.128485"><ele>33.7</ele></trkpt>
+<trkpt lat="12.937380" lon="80.128554"><ele>33.7</ele></trkpt>
+<trkpt lat="12.937346" lon="80.128681"><ele>33.6</ele></trkpt>
+<trkpt lat="12.937259" lon="80.128848"><ele>33.5</ele></trkpt>
+<trkpt lat="12.937088" lon="80.129299"><ele>32.8</ele></trkpt>
+<trkpt lat="12.938059" lon="80.130091"><ele>34.3</ele></trkpt>
+<trkpt lat="12.938492" lon="80.130418"><ele>34.9</ele></trkpt>
+<trkpt lat="12.938767" lon="80.130598"><ele>35.3</ele></trkpt>
+<trkpt lat="12.939740" lon="80.131181"><ele>33.7</ele></trkpt>
+<trkpt lat="12.940114" lon="80.130738"><ele>33.5</ele></trkpt>
+<trkpt lat="12.942411" lon="80.133090"><ele>29.0</ele></trkpt>
+<trkpt lat="12.942917" lon="80.133620"><ele>27.2</ele></trkpt>
+<trkpt lat="12.943191" lon="80.133890"><ele>26.9</ele></trkpt>
+<trkpt lat="12.943520" lon="80.134205"><ele>27.0</ele></trkpt>
+<trkpt lat="12.944052" lon="80.134685"><ele>26.4</ele></trkpt>
+<trkpt lat="12.944372" lon="80.134937"><ele>26.1</ele></trkpt>
+<trkpt lat="12.944625" lon="80.135219"><ele>26.0</ele></trkpt>
+<trkpt lat="12.944735" lon="80.135417"><ele>25.9</ele></trkpt>
+<trkpt lat="12.946213" lon="80.136559"><ele>25.7</ele></trkpt>
+</trkseg></trk>
+</gpx>

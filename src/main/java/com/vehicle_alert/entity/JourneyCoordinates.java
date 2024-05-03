@@ -17,8 +17,6 @@ import java.util.List;
 @Entity
 @Table(name = "journey_coordinates")
 public class JourneyCoordinates {
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
