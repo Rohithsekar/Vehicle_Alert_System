@@ -100,8 +100,14 @@ public class DashboardServiceImpl implements DashboardService {
 
 
             H3Core h3Core = H3Core.newInstance();
-            long currentH3Index = h3Core.latLngToCell(currentLatitude, currentLongitude, 11);
-            long checkPointH3Index = h3Core.latLngToCell(checkPointLat, checkPointLng, 11);
+            long currentH3Index = h3Core.latLngToCell(currentLatitude, currentLongitude, 10);
+            long checkPointH3Index = h3Core.latLngToCell(checkPointLat, checkPointLng, 10);
+
+            System.out.println("curentH3Index is " + currentH3Index + " and checkPointH3Index is "+ checkPointH3Index);
+
+            if(currentH3Index==checkPointH3Index){
+                System.out.println(" true ");
+            }
 
             boolean areNeighborCells = h3Core.areNeighborCells(currentH3Index, checkPointH3Index);
 
