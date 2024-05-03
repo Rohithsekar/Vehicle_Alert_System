@@ -23,7 +23,6 @@ public class JourneyCoordinates {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-
     @Column(name = "source")
     private String source;
 
@@ -32,8 +31,6 @@ public class JourneyCoordinates {
 
     @Column(name = "sourceLng")
     private Double sourceLng;
-
-
 
     @Column(name = "destination")
     private String destination;

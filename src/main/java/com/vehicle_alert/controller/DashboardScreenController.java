@@ -17,12 +17,21 @@ public class DashboardScreenController {
         this.dashboardService = dashboardService;
     }
 
+    /**
+     *
+     * @return APIResponse object containing the locations list
+     */
     @GetMapping("/dropdown")
     public ResponseEntity<APIResponse> dropdownMenu(){
         return dashboardService.fetchDropdownItems();
     }
 
 
+    /**
+     *
+     * @param journeyPath Object containing the journey details
+     * @return APIResponse object containing the acknowledgement message
+     */
     @PostMapping("/trip")
     public ResponseEntity<APIResponse> postTripPathDetails(@RequestBody JourneyPath journeyPath){
 
