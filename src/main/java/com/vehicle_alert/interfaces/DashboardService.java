@@ -8,5 +8,5 @@ public interface DashboardService {
 
     ResponseEntity<APIResponse> fetchDropdownItems();
 
-    ResponseEntity<APIResponse> postTripPath(JourneyPath journeyPath);
+    ResponseEntity<APIResponse> postTripPath(String source, String destination);
 }

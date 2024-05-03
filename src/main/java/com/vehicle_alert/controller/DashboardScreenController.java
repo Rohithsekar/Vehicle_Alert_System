@@ -29,12 +29,14 @@ public class DashboardScreenController {
 
     /**
      *
-     * @param journeyPath Object containing the journey details
+     * @param source & destination contains the source and destination customer selected
      * @return APIResponse object containing the acknowledgement message
      */
     @PostMapping("/trip")
-    public ResponseEntity<APIResponse> postTripPathDetails(@RequestBody JourneyPath journeyPath){
-
-        return dashboardService.postTripPath(journeyPath);
+    public ResponseEntity<APIResponse> postTripPathDetails(
+            @RequestParam String source,
+            @RequestParam String destination
+    ){
+        return dashboardService.postTripPath(source,destination);
     }
 }
