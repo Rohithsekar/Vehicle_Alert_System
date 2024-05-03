@@ -63,19 +63,23 @@ public class DashboardServiceImpl implements DashboardService {
                 List<Graticule> graticuleList = journeyCoordinates.getGraticuleList();
                 Collections.reverse(graticuleList);
 
-                // Find the starting index for the lower half of the list
-                int halfWayIndex = graticuleList.size() / 2;
-
-                // Generate a random index from the halfway point to the end of the list
-                Random random = new Random();
-                int randomIndex = random.nextInt(graticuleList.size() - halfWayIndex) + halfWayIndex;
-
-                Graticule graticule = graticuleList.get(randomIndex);
-
-                journeyCoordinatesDTO.setCheckpoint(graticule);
-
                 journeyCoordinates.setGraticuleList(graticuleList);
+
             }
+
+
+            List<Graticule> graticuleList = journeyCoordinates.getGraticuleList();
+            // Find the starting index for the lower half of the list
+            int halfWayIndex = graticuleList.size() / 2;
+
+            // Generate a random index from the halfway point to the end of the list
+            Random random = new Random();
+            int randomIndex = random.nextInt(graticuleList.size() - halfWayIndex) + halfWayIndex;
+
+            Graticule graticule = graticuleList.get(randomIndex);
+
+            journeyCoordinatesDTO.setCheckpoint(graticule);
+
             return ResponseEntity.ok().body(new APIResponse(Constants.SUCCESS, "Successfully fetched journey details", journeyCoordinatesDTO));
         } catch (NoResultException e) {
             System.err.println(" NoResultException: " + e.getLocalizedMessage());

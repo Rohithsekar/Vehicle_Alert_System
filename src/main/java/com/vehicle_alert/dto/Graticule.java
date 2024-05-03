@@ -1,6 +1,8 @@
 package com.vehicle_alert.dto;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,7 +22,11 @@ public class Graticule {
 
     private Double latitude;
     private Double longitude;
+
+    @JsonIgnore
     private Long h3Index;
+
+    @JsonIgnore
     private Integer h3resolution;
 
     public Graticule(Double latitude, Double longitude) {

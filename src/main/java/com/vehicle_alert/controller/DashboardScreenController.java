@@ -41,8 +41,7 @@ public class DashboardScreenController {
     @PostMapping("/trip")
     public ResponseEntity<APIResponse> postTripPathDetails(
             @RequestParam String source,
-            @RequestParam String destination
-    ){
+            @RequestParam String destination){
         return dashboardService.postTripPath(source,destination);
     }
 
