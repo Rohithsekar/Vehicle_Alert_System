@@ -15,4 +15,8 @@ public class APIResponse {
     private String message;
     private Object data;
 
+    public APIResponse(String status, String message) {
+        this.status = status;
+        this.message = message;
+    }
 }
